@@ -1,0 +1,29 @@
+package com.tinnova.ex05controleDeVeiculos.Service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.tinnova.ex05controleDeVeiculos.domain.Veiculo;
+import com.tinnova.ex05controleDeVeiculos.repository.VeiculoRepository;
+
+@Service
+public class VeiculoService {
+
+	@Autowired
+	private VeiculoRepository repository;
+
+	public Veiculo criarVeiculo(Veiculo veiculo) {
+		Veiculo obj = repository.save(veiculo);
+		return obj;
+	}
+
+	public List<Veiculo> listarVeiculo() {
+		List<Veiculo> obj = repository.findAll();
+		return obj;
+	}
+
+	
+
+}

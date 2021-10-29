@@ -1,0 +1,7 @@
+package com.tinnova.ex05controleDeVeiculos.domain;
+
+public enum Bool {
+	
+	private
+
+}

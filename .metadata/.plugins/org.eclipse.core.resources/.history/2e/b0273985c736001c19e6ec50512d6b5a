@@ -1,0 +1,16 @@
+
+public class CalculoApplication {
+
+	public static void main(String[] args) {
+		
+		CalculoEleitores el = new CalculoEleitores(1000, 800, 150, 50);
+		
+		System.out.println(el.toString());
+		
+		System.out.println("Percentual de Votos Válidos: "+el.calcularValido()+ "%");
+		System.out.println(el.calcularBranco());
+		System.out.println(el.calcularNulo());
+
+	}
+
+}

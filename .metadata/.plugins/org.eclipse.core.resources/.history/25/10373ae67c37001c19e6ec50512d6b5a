@@ -1,0 +1,46 @@
+package com.tinnova.ex05controleDeVeiculos.DTOs;
+
+import java.io.Serializable;
+
+public class VeiculosNaoVendidosDTO implements Serializable{
+
+	private static final long serialVersionUID = 1L;
+	
+	private String mensagem;
+	private Integer quantidade;
+	
+	
+	public VeiculosNaoVendidosDTO() {
+		super();
+	}
+
+
+	public VeiculosNaoVendidosDTO(String mensagem, Integer quantidade) {
+		super();
+		this.mensagem = mensagem;
+		this.quantidade = quantidade;
+	}
+
+
+	public String getMensagem() {
+		return mensagem;
+	}
+
+
+	public void setMensagem(String mensagem) {
+		this.mensagem = mensagem;
+	}
+
+
+	public Integer getQuantidade() {
+		return quantidade;
+	}
+
+
+	public void setQuantidade(Integer quantidade) {
+		this.quantidade = quantidade;
+	}
+	
+	
+
+}

@@ -1,0 +1,25 @@
+package com.tinnova.ex05controleDeVeiculos.domain.enumerate;
+
+public enum VeiculosVendidos {
+	
+	VENDIDO(false),
+	NAO_VENDIDO(true);
+	
+	
+	private boolean situacao;
+	
+	private VeiculosVendidos( boolean situacao) {
+		
+		this.situacao = situacao;
+	}
+
+	
+
+	public boolean isSituacao() {
+		return situacao;
+	}
+	
+}
+
+	
+		

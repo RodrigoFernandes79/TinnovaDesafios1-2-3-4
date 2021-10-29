@@ -1,0 +1,37 @@
+package com.tinnova.ex05controleDeVeiculos.resource;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.tinnova.ex05controleDeVeiculos.domain.Veiculo;
+import com.tinnova.ex05controleDeVeiculos.service.VeiculoService;
+
+@RestController
+@RequestMapping("/veiculos")
+public class VeiculoResource {
+	
+	@Autowired
+	private VeiculoService vService;
+	
+	@PostMapping
+	public ResponseEntity<Object> addVeiculo(){
+		Veiculo obj = vService.addVeiculo();
+		return obj;
+		
+	}
+	
+	@GetMapping //localhost:8080/veiculos
+	public ResponseEntity<List<Veiculo>> listarVeiculo(){
+		List<Veiculo> obj = vService.listarVeiculo();
+		
+		return ResponseEntity.ok().body(obj);
+		
+	}
+
+}

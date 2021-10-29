@@ -1,0 +1,12 @@
+
+public class CalculoApplication {
+
+	public static void main(String[] args) {
+		
+		CalculoEleitores el = new CalculoEleitores(1000, 800, 150, 50);
+		
+		System.out.println(el.toString());
+
+	}
+
+}

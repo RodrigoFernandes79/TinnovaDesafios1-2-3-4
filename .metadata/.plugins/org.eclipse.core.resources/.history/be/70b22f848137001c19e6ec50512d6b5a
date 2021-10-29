@@ -1,0 +1,5 @@
+package com.tinnova.ex05controleDeVeiculos.Dtos;
+
+public class VeiculosNaoVendidos {
+
+}

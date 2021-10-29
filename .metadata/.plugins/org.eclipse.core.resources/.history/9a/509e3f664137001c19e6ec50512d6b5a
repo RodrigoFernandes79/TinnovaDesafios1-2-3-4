@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class SomaMultiplosApplication {
+
+	public static void main(String[] args) {
+		System.out.println("------------");
+		System.out.println("Soma de Múltiplos:");
+		System.out.println("============");
+		System.out.println("Digite um número inteiro a ser calculado a Soma dos Múltiplos de 3 e 5:");
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		System.out.println("O número digitado foi: " +n);
+		int soma=0;
+		for(int i=1;i<=n;i++) {
+			
+				if(i %3==0 || i%5==0) {
+					System.out.print("A soma entre: " +i+" e "+i);
+				 soma =soma+i;
+					
+					
+		}
+									
+	}	System.out.println("é igual a: "+soma);
+	}
+}

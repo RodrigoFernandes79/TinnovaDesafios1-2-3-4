@@ -1,0 +1,5 @@
+package com.tinnova.ex05controleDeVeiculos.Resource;
+
+public class VeiculoResource {
+
+}

@@ -1,0 +1,5 @@
+package com.tinnova.ex05controleDeVeiculos.repository;
+
+public class VeiculoRepository {
+
+}

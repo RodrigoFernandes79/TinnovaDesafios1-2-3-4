@@ -1,0 +1,19 @@
+package com.tinnova.ex05controleDeVeiculos.domain.enumerate;
+
+public enum Text {
+	
+	CAMBIO_AUTOMATICO("cambio automatico"),
+	CAMBIO_MANUAL("cambio manual");
+	
+	private String descricao;
+
+	public String getDescricao() {
+		return descricao;
+	}
+
+	private Text(String descricao) {
+		this.descricao = descricao;
+	}
+	
+
+}

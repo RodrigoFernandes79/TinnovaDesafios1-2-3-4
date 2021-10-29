@@ -1,0 +1,12 @@
+package com.tinnova.ex05controleDeVeiculos.Dto;
+
+import java.io.Serializable;
+
+public class VeiculosNaoVendidosDto implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+	
+	private Integer Quantidade;
+	private 
+
+}

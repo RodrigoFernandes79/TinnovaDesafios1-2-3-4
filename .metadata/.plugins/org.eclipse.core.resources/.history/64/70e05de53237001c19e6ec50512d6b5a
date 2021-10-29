@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class FatorialApllication {
+
+	public static void main(String[] args) {
+		
+		
+		System.out.println("------------");
+		System.out.println("Cálculo de Fatorial:");
+		System.out.println("============");
+		System.out.println("Digite um número inteiro a ser calculado o seu fatorial:");
+		Scanner sc = new Scanner(System.in);
+		int fat = sc.nextInt();
+		System.out.println("O número digitado foi: " +fat);
+		int cont = fat;
+		
+		for(int i=1; i<=cont;++i) {
+			
+			if(i<cont) {
+				System.out.println(i+" x ");
+				
+			}
+		}
+	}
+
+}

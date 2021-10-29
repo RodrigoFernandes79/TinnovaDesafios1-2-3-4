@@ -1,0 +1,8 @@
+package com.tinnova.ex05controleDeVeiculos.Service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class VeiculoService {
+
+}

@@ -1,0 +1,37 @@
+package com.tinnova.ex05controleDeVeiculos.service;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.tinnova.ex05controleDeVeiculos.domain.Veiculo;
+import com.tinnova.ex05controleDeVeiculos.exception.ObjectNotFoundException;
+import com.tinnova.ex05controleDeVeiculos.repository.VeiculoRepository;
+
+@Service
+public class VeiculoService {
+
+	@Autowired
+	private VeiculoRepository repository;
+
+	public Veiculo criarVeiculo(Veiculo veiculo) {
+		Veiculo obj = repository.save(veiculo);
+		return obj;
+	}
+
+	public List<Veiculo> listarVeiculo() {
+		List<Veiculo> obj = repository.findAll();
+		return obj;
+	}
+
+	public Veiculo listarPorId(Long id) throws ObjectNotFoundException {
+	Optional<Veiculo> obj = repository.findById(id);
+		obj.orElseThrow(() -> new ObjectNotFoundException());
+		return obj.get();
+	}
+
+	
+
+}
